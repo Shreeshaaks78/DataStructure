@@ -1,0 +1,28 @@
+package dsa;
+
+import java.util.Scanner;
+
+public class Reverse_string {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num[] = new int[20];
+		System.out.println("Enter array size:");
+		int size = sc.nextInt();
+		for(int i=0;i<size;i++) {
+			num[i]=sc.nextInt();
+		}
+		for(int i=0;i<size;i++) {
+			System.out.println(num[i]);
+		}
+		for(int i=0;i<size/2;i++) {
+			int r= num[i];
+			num[i] = num[size - 1 - i];
+            num[size - 1 - i] = r;
+		}
+		System.out.println("Reversed array:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(num[i] + " ");
+        }
+	}
+
+}
