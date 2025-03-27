@@ -1,0 +1,67 @@
+package src;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sample {
+	public int findMyValue(int a[],int mid,int find,int l,int r) {
+		int left=l;
+		int right=r;
+		while(left<=right) {
+			mid=(left+right)/2;
+		if(a[mid]==find) {
+			System.out.println("Item found "+a[mid]+" at index "+mid);
+			break;
+		}
+		else if(find>a[mid]) {
+			left=mid+1;
+		}
+		else if(find<a[mid]) {
+			right=mid-1;
+		}
+		
+		}
+		return -1;
+		
+	}
+	public static void main(String[]args) {
+		Sample b=new Sample();
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[50];
+		System.out.println("Enter the size:");
+		int size=sc.nextInt();
+		System.out.println("Enter the elements:");
+		for (int i=0;i<size;i++) {
+			arr[i]=sc.nextInt();
+		}
+		System.out.println();
+		Arrays.sort(arr,0,size);
+        
+        // Display the sorted array
+        System.out.print("Sorted array: ");
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i]+" ");
+		}
+
+		System.out.println("Enter a value:");
+		int find=sc.nextInt();
+		boolean isPresent=false;
+		for (int num : arr) {
+			if(num == find) {
+				isPresent = true;
+			}
+		}
+		int left=0;
+		int right=size-1;
+		int mid=0;
+		System.out.println(b.findMyValue(arr, mid, find, left, right));
+		
+		if (isPresent) {
+            System.out.println("Element is present");
+        }
+		else {
+			System.out.println("Element is not present");
+		}
+	}
+
+}
