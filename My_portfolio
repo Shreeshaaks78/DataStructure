@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shreeshaa's Portfolio</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: #001144;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: antiquewhite;
+    text-shadow: 0 0 25px antiquewhite,
+                 0 0 50px antiquewhite;
+    transform: scale(1.1);
+}
+
+span{
+    color: antiquewhite;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: antiquewhite;
+    border-bottom: 3px solid antiquewhite;
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transform: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: antiquewhite;
+    box-shadow: 0 0 25px antiquewhite;
+    color: white;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background:antiquewhite;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 190px 12% 70px;
+    transform: 0.3s ease;
+    
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    
+    font-size: 42px;
+}
+.home-content h2{
+    font-size: 62px;
+    line-height: 1.2;
+    color: #001144;
+}
+.home-content p{
+    font-size: larger;
+    margin: 25px 10px 30px;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(2, 16, 57);
+}
+::-webkit-scrollbar-track{
+    background-color: #ffffff;
+    width: 5px;
+}
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.education{
+    padding-top: 50px;
+    padding-left: 125px;
+    font-size: 19px;
+    text-align: left;
+    color: #071338;
+    padding-bottom: 20px;
+    transform: 0.3s ease;
+
+}
+
+.edu1 {
+    padding-left: 125px;
+    padding-bottom: 15px;
+    font-size: larger;
+}
+
+.edu2 {
+    padding-left: 125px;
+    padding-bottom: 60px;
+    font-size: larger;
+}
+
+h3{
+    padding-left: 40px;
+}
+
+.school {
+    padding-left: 700px;
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top:1130px;
+    left: 300px;
+}
+
+.skills{
+    padding-top: 50px;
+    padding-left: 125px;
+    font-size: 21px;
+    text-align: left;
+    color: #071338;
+    padding-bottom: 20px;
+}
+
+.skill {
+    background: rgb(1, 16, 66);
+    padding: 25px;
+    margin: 10px auto;
+    width: 50%;
+    color: #f7f7f7;
+    box-shadow: 0 0 10px rgb(73, 81, 117);
+}
+
+.skill h2 {
+    color: rgb(250, 205, 146);
+}
+
+.projects{
+    padding-top: 50px;
+    padding-left: 125px;
+    font-size: 21px;
+    text-align: left;
+    color: #071338;
+    padding-bottom: 20px;
+}
+.project {
+    background: rgb(1, 16, 66);
+    padding: 45px;
+    margin: 10px auto;
+    width: 50%;
+    color: #f7f7f7;
+    box-shadow: 0 0 10px rgb(73, 81, 117);
+}
+
+.project h3 {
+    color: rgb(250, 205, 146);
+}
+
+.project p {
+    padding-left: 70px;
+}
+
+.cont{
+    padding-top: 50px;
+    padding-left: 125px;
+    font-size: 21px;
+    text-align: left;
+    color: #071338;
+    padding-bottom: 20px;
+}
+
+.con {
+    padding-left:100px;
+}
+
+footer {
+    background: #01123d;
+    color: white;
+    padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo"><span>Shreeshaa </span>K S</a>
+            <nav class="navbar">
+                <a href="#about" class="active">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+
+            <a href="#contact" class="contact">Contact</a>
+        </header>
+
+        <section id="about" class="home">
+            <div class="home-content">
+                <h3>Hi</h3>
+
+                <h2>I'm Shreeshaa<br></h2>
+
+
+                <p>I am a second-year B.Sc. IT student at KG College of Arts and Science.<br>
+                    I have a strong passion for technology and problem-solving, which has led me to participate in the SIH Hackathon. Additionally, I had the opportunity to serve as a <b>Student Care Leader</b> in Kindathon, 
+                    which enhanced my leadership and teamwork skills.<br><br>
+       
+                   And I am also interested in web designing and have completed a Python certification to strengthen my technical skills.
+                   Apart from academics, I love drawing and listening to music, which helps me stay creative and focused. My ultimate 
+                   goal is to become a skilled <b>Software Developer</b>, contributing to innovative and impactful projects.<br><br>
+                       
+                   And I am eager to explore new technologies and skills.</p>
+
+            </div>
+
+            <img src="C:\Users\shree\OneDrive\Pictures\Pics\IMG-20241006-WA0015.jpg" alt="about me" class="about_me">
+            
+
+        </section>
+
+        <section id="education" class="education" style="background-color: white">
+            <h2>Education</h2><br>
+            <h3>School</h3>
+            <div class="edu1">
+                <p>I done my schooling in <a href="https://svgvschool.in/">SVGV.MATRIC.HR.SEC.SCHOOL</a> ,Coimbatore.<br><br>Graduted:May 2023<br><br><b>Extracurriculars: </b>State topper in Indian Talent Exam (Drawing)</p>
+                <br>
+            </div>
+            <h3>College</h3>
+            <div class="edu2">
+            <p>Currently I am pursuing my<b> BSc.IT</b> degree at <a href="https://www.kgcas.com/">KG College of Arts and Science</a>,Coimbatore.<br><br>July 2023 - Expected May 2026</p>
+            </div>
+        </section>
+    
+        <section id="skills" class="skills" style="background-color: antiquewhite;">
+            <h2>Skills</h2>
+            <div class="skill">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <h2><b>Tech Skills</b></h2><br>
+                                <li>Python (Certified)</li>
+                                <li>Full-Stack Web Development (Certified)</li>
+                                <li>C++</li>
+                                <li>Java</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <h2><b>Soft Skills</b></h2><br>
+                                <li>Leadership</li>
+                                <li>Teamwork</li>
+                                <li>Critical Thinking</li>
+                                <li>Effective Communication</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div><br><br>
+        </section>
+    
+        <section id="projects" class="projects" style="background-color: white">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Personal Portfolio</h3><br>
+                <p>A simple and responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+            </div><br><br>
+        </section>
+    
+        <section id="contact" class="cont" style="background-color: antiquewhite;">
+            <h2>Contact</h2><br>
+            <div class="con">
+                
+                <p><b>Email: </b><a href="mailto:shreeshaa@example.com">shreeshaaks11@gmail.com</a><br><br>
+                    <b>Phone: </b><a href="">+91-6383064641</a><br><br>
+                    <b>LinkedIn: </b><i><a href="https://www.linkedin.com/in/shreeshaa-ks-864b9b285">Visit my linkedin</a></i>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Shreeshaa | Portfolio</p>
+        </footer>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Welcome to my portfolio!");
+        });</script>
+    </body>
+</html>
